@@ -11,7 +11,6 @@ namespace Chinook.Domain.Entities
             Invoices = new HashSet<Invoice>();
         }
 
-        public long CustomerId { get; set; }
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string? Company { get; set; }

@@ -10,8 +10,6 @@ namespace Chinook.Domain.Entities
         {
             Tracks = new HashSet<Track>();
         }
-
-        public long MediaTypeId { get; set; }
         public string? Name { get; set; }
 
         public virtual ICollection<Track> Tracks { get; set; }

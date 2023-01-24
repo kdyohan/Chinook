@@ -9,9 +9,9 @@ namespace Chinook.Core.Interface
     public interface IGenericRepository<T> where T : class
     {
         Task<IEnumerable<T>> GetAll();
-        Task<T> GetById(int id);
+        Task<T> GetById(long id);
         Task<bool> AddEntity(T entity);
-        Task<bool> DeleteEntity(int id);
+        Task<bool> DeleteEntity(long id);
         Task<bool> UpdateEntity(T entity);
     }
 }

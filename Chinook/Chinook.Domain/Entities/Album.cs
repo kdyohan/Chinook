@@ -10,8 +10,6 @@ namespace Chinook.Domain.Entities
         {
             Tracks = new HashSet<Track>();
         }
-
-        public long AlbumId { get; set; }
         public string Title { get; set; } = null!;
         public long ArtistId { get; set; }
 

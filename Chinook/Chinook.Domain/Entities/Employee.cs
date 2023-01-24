@@ -12,7 +12,6 @@ namespace Chinook.Domain.Entities
             InverseReportsToNavigation = new HashSet<Employee>();
         }
 
-        public long EmployeeId { get; set; }
         public string LastName { get; set; } = null!;
         public string FirstName { get; set; } = null!;
         public string? Title { get; set; }

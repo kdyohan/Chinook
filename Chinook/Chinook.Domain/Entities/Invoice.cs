@@ -11,7 +11,6 @@ namespace Chinook.Domain.Entities
             InvoiceLines = new HashSet<InvoiceLine>();
         }
 
-        public long InvoiceId { get; set; }
         public long CustomerId { get; set; }
         public byte[] InvoiceDate { get; set; } = null!;
         public string? BillingAddress { get; set; }

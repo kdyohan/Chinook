@@ -23,7 +23,7 @@ namespace Chinook.Core
             return true;
         }
 
-        public virtual async Task<bool> DeleteEntity(int id)
+        public virtual async Task<bool> DeleteEntity(long id)
         {
             throw new NotImplementedException();
         }
@@ -33,7 +33,7 @@ namespace Chinook.Core
             return await _DbSet.ToListAsync();
         }
 
-        public virtual async Task<T> GetById(int id)
+        public virtual async Task<T> GetById(long id)
         {
             return await _DbSet.FindAsync(id);
         }

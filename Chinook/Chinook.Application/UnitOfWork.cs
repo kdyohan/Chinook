@@ -11,10 +11,14 @@ namespace Chinook.Application
     public class UnitOfWork:IUnitOfWork,IDisposable
     {
         protected ChinookContext _context { get; set; }
+        public IAlbumRepository AlbumRepository { get; private set; }
+        public IArtistRepository ArtistRepository { get; private set; }
+
         public UnitOfWork(ChinookContext context)
         {
-            _context = context;         
-
+            _context = context;
+            AlbumRepository = new AlbumRepository(_context);
+            ArtistRepository = new ArtistRepository(_context);
         }
 
         public async Task CompleteAsync()

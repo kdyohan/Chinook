@@ -10,8 +10,6 @@ namespace Chinook.Domain.Entities
         {
             Albums = new HashSet<Album>();
         }
-
-        public long ArtistId { get; set; }
         public string? Name { get; set; }
 
         public virtual ICollection<Album> Albums { get; set; }

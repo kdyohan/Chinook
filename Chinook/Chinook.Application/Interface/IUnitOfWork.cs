@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Chinook.Application.Interface
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
         Task CompleteAsync();
+        IAlbumRepository AlbumRepository { get; }
+        IArtistRepository ArtistRepository { get; }
+
     }
 }
